@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="LoginStyle.css" />
+  </head>
+  <body>
+    <div class="MainDiv">
+      <h1 id="LoginText">New User</h1>
+      <div class="TextInput">
+        <div id="UserWarning"></div>
+        <input type="text" placeholder="Email" id="UserTB" />
+        <div id="PassWarning"></div>
+        <input type="password" placeholder="Password" id="PassTB" />
+        <img
+          src="CloseEyeIcon.png"
+          id="PassToggle"
+          style="
+            position: absolute;
+            right: 32px;
+            top: 54.5%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            height: 20px;
+          "
+        />
+      </div>
+
+      <button onclick="saveLogin()" id="SignUPBut">Sign Up</button>
+
+      <div class="ForgotPass">
+        <a href="Login.html" id="ForgotPass">Already have an account?</a>
+      </div>
+    </div>
+    <script src="https://localhost:7179/SaveInfo.js"></script>
+  </body>
+</html>

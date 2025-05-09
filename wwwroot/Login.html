@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./Login.js" defer></script>
+    <link rel="stylesheet" href="LoginStyle.css" />
+  </head>
+  <body>
+    <div class="MainDiv">
+      <h1 id="LoginText">Login</h1>
+      <div class="TextInput">
+        <div id="UserWarning"></div>
+        <input type="text" placeholder="Email" id="UserTB" />
+        <div id="PassWarning"></div>
+        <input type="password" placeholder="Password" id="PassTB" />
+        <img
+          src="CloseEyeIcon.png"
+          id="PassToggle"
+          style="
+            position: absolute;
+            right: 32px;
+            top: 54.5%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            height: 20px;
+          "
+        />
+      </div>
+
+      <div class="RememberMe">
+        <input type="checkbox" />Remember me (I'm usesless tbh)
+      </div>
+      <button onclick="loginUser()" id="LoginBut">Login</button>
+
+      <div class="ForgotPass">
+        <a href="IDK.html" id="ForgotPass">Forgot password?</a>
+        <a href="SignUp.html" id="CreateAcc">Create an account</a>
+      </div>
+    </div>
+  </body>
+</html>
